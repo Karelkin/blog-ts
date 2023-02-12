@@ -15,6 +15,7 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].css'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }
