@@ -10,7 +10,7 @@ export interface BuildPaths {
 export interface BuildEnv {
   mode: BuildMode;
   port: number;
-  analyze: boolean;
+  analyze: string;
 }
 
 export interface BuildOptions {
